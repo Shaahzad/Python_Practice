@@ -38,10 +38,22 @@
 #     print(i)
 
 
-l = [1, 4, 78]
+# l = [1, 4, 78]
 
-for i in l:
+# for i in l:
+#     print(i)
+
+# else:
+#     print("Done")
+
+
+# for i in range(100):
+#     if(i == 34):
+#         break
+#     print(i)
+
+
+for i in range(100):
+    if(i == 34):
+        continue
     print(i)
-
-else:
-    print("Done")
