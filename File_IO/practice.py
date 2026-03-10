@@ -1,40 +1,46 @@
-# read Mode
-# f = open("file.txt")
-# data = f.read()
-# print(data)
-# f.close()
-
-
-# write Mode
-# st = "Shahzad Kese ho"
-
-# f = open("myfile.txt", "w")
-# f.write(st)
-# f.close()
-
-
-# f = open("file.txt")
-
-# lines = f.readlines()
-# print(lines, type(lines))
-
-# line1 = f.readline()
-# print(line1, type(line1))
-
-# line2 = f.readline()
-# print(line2, type(line2))
-
-# line3 = f.readline()
-# print(line3 == "")
+# f = open("poem.txt")
+# content = f.read()
+# if("twinkle" in content):
+#     print("The word twinkle present in the content")
+# else:
+#     print("The word twinkle is not present in the content")
 
 # f.close()
 
 
-# append mode
+# import random 
 
-# st = "Shahzad Kese ho "
+# def game():
+#     print("You are playing the game..")
+#     score = random.randint(1, 62)
 
-# f = open("myfile.txt", "a")
-# f.write(st)
-# f.close()
+#     # fetch high score
+#     with open("hiscore.txt") as f:
+#         hiscore = f.read()
+#         if(hiscore != ""):
+#             hiscore = int(hiscore)
+#         else:
+#             hiscore = 0
+    
+#     print(f"Your Score: {score}")
+#     if(score>hiscore):
+#         # write this hiscore to the file
+#         with open("hiscore.txt", "w") as f:
+#             f.write(str(score))
 
+#     return score
+
+# game()
+
+
+
+# def generateTable(n):
+#     table = ""
+#     for i in range(1, 11):
+#         table += f"{n} X {i} = {n * i}\n"
+
+#     with open(f"tables/table_{n}.txt", "w") as f:
+#         f.write(table)
+
+# for i in range(2, 21):
+#     generateTable(i)
